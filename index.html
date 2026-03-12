@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BlogForge</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/blog.css">
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
+
+<!-- Markdown -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<script src="js/firebase-config.js"></script>
+<script src="js/auth/auth-state.js"></script>
+<script src="js/blogs/load-blogs.js"></script>
+<script src="js/blogs/search.js"></script>
+
+</head>
+
+<body>
+
+<div id="navbar"></div>
+
+<div class="page-wrapper">
+
+<section class="hero">
+
+<h1>Share Your Ideas With The World</h1>
+
+<p>Write blogs, share knowledge, and explore amazing content.</p>
+
+<div class="search-bar">
+
+  <div class="search-input-wrapper">
+    <input id="searchInput" placeholder="Search blogs...">
+    <div id="searchDropdown"></div>
+  </div>
+
+  <button onclick="searchBlogs()">Search</button>
+
+</div>
+
+</section>
+
+<section class="blog-container">
+
+<div id="blogs"></div>
+
+<div class="load-more">
+
+<button onclick="loadMoreBlogs()">Load More</button>
+
+</div>
+
+</section>
+
+</div>
+
+<script src="js/ui/navbar.js"></script>
+
+</body>
+</html>

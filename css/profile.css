@@ -1,0 +1,81 @@
+.profile-page{
+max-width:900px;
+margin:auto;
+padding:60px 20px;
+}
+
+/* profile card */
+
+.profile-card{
+background:white;
+padding:22px 28px;      /* reduced padding (was too fat) */
+border-radius:10px;
+box-shadow:0 8px 24px rgba(0,0,0,0.06);
+margin-bottom:40px;
+border:1px solid #e2e8f0;
+}
+
+.profile-card h1{
+margin:0 0 10px 0;
+color:#1e293b;
+font-size:26px;
+}
+
+/* user info section */
+
+.profile-info{
+margin-top:10px;
+}
+
+.profile-label{
+font-size:13px;
+color:#64748b;
+}
+
+.user-email{
+margin:4px 0 0 0;
+font-size:16px;
+font-weight:500;
+color:#1e293b;
+}
+
+/* blogs section */
+
+.user-blogs-section h2{
+margin-bottom:20px;
+color:#1e293b;
+}
+
+/* blog cards */
+
+.blog-list{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+.user-blog-card{
+background:white;
+padding:18px;
+border-radius:10px;
+box-shadow:0 6px 20px rgba(0,0,0,0.05);
+border:1px solid #e2e8f0;
+transition:0.25s;
+}
+
+.user-blog-card:hover{
+transform:translateY(-3px);
+box-shadow:0 12px 28px rgba(0,0,0,0.08);
+}
+
+.user-blog-card h3{
+margin:0 0 8px 0;
+color:#1e293b;
+font-size:18px;
+}
+
+.user-blog-card p{
+color:#64748b;
+font-size:14px;
+margin:0;
+}
