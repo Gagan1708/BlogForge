@@ -24,3 +24,9 @@ color:#64748b;
 line-height:1.6;
 margin-top:10px;
 }
+
+.blog,
+.blog-content-card{
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
